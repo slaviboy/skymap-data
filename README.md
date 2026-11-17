@@ -1,6 +1,6 @@
 # SkyMap data
 
-The data that SkyMap, a free astronomy app for Android, is built from and downloads: surface maps of planets and moons, the catalogue of stars and deep-sky objects, constellation art, places, the names and outlines of surface features, and every source all of it was made from. Copies of the Wikipedia articles and pictures the app shows are on their way.
+The data that SkyMap, a free astronomy app for Android, is built from and downloads: surface maps of planets and moons, the catalogue of stars and deep-sky objects, constellation art, places, the names and outlines of surface features, and every source all of it was made from; and copies of the Wikipedia articles and the Wikimedia Commons pictures the app shows, which it falls back on when Wikipedia or Commons cannot be reached.
 
 The data lives here in public, with every source's licence and credit, so the app keeps working if a service it draws on goes away.
 
@@ -13,10 +13,8 @@ Each release is a fixed set of files. Its files never change: a changed set is p
 | [`maps-v1`](https://github.com/slaviboy/skymap-data/releases/tag/maps-v1) | The sharper maps (High and Ultra) of 16 worlds, which the app downloads on request: one archive per world, tier and GPU encoding (`moon-high-astc.7z`, `moon-high-etc2.7z`, `moon-ultra-astc.7z`, …) | 48 archives, 336 MB |
 | [`app-data-v1`](https://github.com/slaviboy/skymap-data/releases/tag/app-data-v1) | A copy of the data inside the app: the bundled maps, surface features and outlines, the catalogue database, stars, constellation art and places | 5 archives, 20 MB |
 | [`sources-v1`](https://github.com/slaviboy/skymap-data/releases/tag/sources-v1) | Every source the data above is made from, exactly as the app's tools fetched it and pinned its SHA-256: the planetary maps and elevation models of NASA, USGS and Hubble, the star and deep-sky catalogues, the gazetteer of surface features, the constellation art, the places, and the rest. One archive per source; the Moon's SLDEM2015 elevation model comes in two volumes, which `7z x moon_sldem2015_128.7z.001` joins | 178 sources in 179 archives, 6.0 GB (13 GB unpacked) |
-
-On their way, made by the app's own tools:
-- **`articles-v1`:** the openings of the about 33,800 Wikipedia articles the app shows, in 48 languages, one archive per language, with each article's link and licence (CC BY-SA 4.0);
-- **`pictures-v1`:** the pictures on the objects' pages, each with its author, licence and credit.
+| [`articles-v1`](https://github.com/slaviboy/skymap-data/releases/tag/articles-v1) | The openings of the Wikipedia articles about the objects in the app's catalogue, in every edition of Wikipedia the app's languages read (Chinese in its simplified and its traditional script), as Wikipedia's REST API gave them: one archive per edition, `articles-<edition>.7z`, holding one JSON of each object's title, opening, revision and link, and the picture at its head with that picture's credit. Wikipedia contributors, CC BY-SA 4.0; `ATTRIBUTION.md` links every article and the revision copied | 35,310 articles in 49 archives, 3.9 MB |
+| [`pictures-v1`](https://github.com/slaviboy/skymap-data/releases/tag/pictures-v1) | The picture at the head of each of those articles, from Wikimedia Commons, at the width the app's pages show it, unchanged, with its author, licence and credit as Commons gave them: one archive for each group of the first two hex digits of the MD5 of the picture's name on Commons (`pictures-ab.7z`, as Commons files it under `…/a/ab/`), each with `pictures-ab.json`, its pictures' names, checksums and credits. Each picture keeps its own licence; `ATTRIBUTION.md` names every one | 4,578 pictures in 256 archives, 1.12 GB |
 
 Every release holds:
 - **the archives:** 7z, LZMA2 with a 16 MB dictionary;
@@ -37,4 +35,4 @@ The app does the same: it checks an archive's SHA-256, unpacks it, and checks ev
 
 ## Licences
 
-The data is not under one licence. Every file keeps the licences of the sources it was made from, and [`ATTRIBUTION.md`](ATTRIBUTION.md) lists every source with its licence, terms, credit line and what was done to it. Most are public domain or CC0 (NASA, USGS, JPL). Others ask for credit (CC BY 4.0: Hubble's OPAL maps, GeoNames) or for credit and the same licence (CC BY-SA 4.0: HYG, OpenNGC, Wikipedia). Stellarium's constellation art is under the Free Art License. Anything made from a share-alike source stays under that licence.
+The data is not under one licence. Every file keeps the licences of the sources it was made from, and [`ATTRIBUTION.md`](ATTRIBUTION.md) lists every source with its licence, terms, credit line and what was done to it. Most are public domain or CC0 (NASA, USGS, JPL). Others ask for credit (CC BY 4.0: Hubble's OPAL maps, GeoNames) or for credit and the same licence (CC BY-SA 4.0: HYG, OpenNGC, Wikipedia, whose articles' openings `articles-v1` copies). The pictures of `pictures-v1` each keep the licence Commons gives them, most public domain, CC BY or CC BY-SA, named with its author in `pictures-<group>.json` and `ATTRIBUTION.md`. Stellarium's constellation art is under the Free Art License. Anything made from a share-alike source stays under that licence.

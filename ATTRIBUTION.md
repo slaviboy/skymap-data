@@ -1509,3 +1509,25 @@ Every file here keeps the licence of the sources it was made from. Each source, 
 - What was done to it: Not copied: the names, part numbers, GPUs and years of the chips listed, read from the page at this revision and written into the app's table of devices (bodies/quality.json), each chip given the 3D view's tier for its GPU's generation.
 - Retrieved: 2026-11-15
 - Identifier in the app's lock: `wikipedia_unisoc`
+
+## The openings of Wikipedia's articles (articles-v1)
+
+- Publisher: Wikipedia, its editions in the languages of the app (49 editions and scripts)
+- Licence: CC BY-SA 4.0
+- Terms: https://creativecommons.org/licenses/by-sa/4.0/
+- Credit: Wikipedia contributors; each article's authors are listed in its history
+- Page: https://www.wikipedia.org/
+- What was done to it: The opening of each of 35,310 articles, as Wikipedia's REST API gave it (`page/summary`), unchanged, with its title, revision and link, and the name and credit of the picture at its head; one archive per edition. Copied for the app to show when Wikipedia cannot be reached, saying it is a copy and of which day.
+- Retrieved: 2026-11-16 to 2026-11-17
+- Every article, with its link and the revision copied: the `ATTRIBUTION.md` of release `articles-v1`
+
+## The pictures at the head of those articles, from Wikimedia Commons (pictures-v1)
+
+- Publisher: Wikimedia Commons
+- Licence: each picture its own, as Commons gives it (most public domain, CC BY or CC BY-SA)
+- Terms: each picture's page on Commons
+- Credit: each picture's author, as Commons credits it
+- Page: https://commons.wikimedia.org/
+- What was done to it: Nothing: each of 4,578 pictures is the file Commons serves at the width the app shows it (960 pixels, or the file as uploaded when it is smaller). Copied for the app to show when Commons cannot be reached, with the same credit.
+- Retrieved: 2026-11-16 to 2026-11-17
+- Every picture, with its author, licence and page: the `ATTRIBUTION.md` of release `pictures-v1`, and each archive's `pictures-<group>.json`
