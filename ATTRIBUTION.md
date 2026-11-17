@@ -2,6 +2,17 @@
 
 Every file here keeps the licence of the sources it was made from. Each source, as the app credits it:
 
+## Accurate distances to Galactic globular clusters through a combination of Gaia EDR3, HST and literature data (arXiv:2105.09526v2, its TeX source): the table of final distances
+
+- Publisher: H. Baumgardt and E. Vasiliev; arXiv
+- Licence: CC BY 4.0
+- Terms: https://arxiv.org/abs/2105.09526
+- Credit: Baumgardt, H. and Vasiliev, E. (2021), Accurate distances to Galactic globular clusters through a combination of Gaia EDR3, HST and literature data, MNRAS 505, 5957
+- Page: https://arxiv.org/abs/2105.09526
+- What was done to it: Only each cluster's mean distance, its uncertainty either way and how many distances it combines, from the paper's table of final distances (findis_tab.tex); nothing else of the paper is copied.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `baumgardt_vasiliev_2021`
+
 ## Callisto Galileo/Voyager Global Mosaic 1km
 
 - Publisher: USGS Astrogeology Science Center
@@ -353,6 +364,215 @@ Every file here keeps the licence of the sources it was made from. Each source, 
 - What was done to it: The cities the app bundles for finding a place (places/cities.tsv); on the Earth's globe the 3,000 most populous, each named as GeoNames gives it in Latin script.
 - Retrieved: 2026-11-13
 - Identifier in the app's lock: `geonames_cities15000`
+
+## Catalog of Parameters for Milky Way Globular Clusters, December 2010 revision: Part I, identifications and positions
+
+- Publisher: W. E. Harris, McMaster University
+- Licence: Free of charge, referring to the source
+- Terms: https://physics.mcmaster.ca/~harris/mwgc.dat
+- Credit: Harris, W. E. (1996), AJ 112, 1487 (2010 edition), https://physics.mcmaster.ca/~harris/mwgc.dat
+- Page: https://physics.mcmaster.ca/~harris/Databases.html
+- What was done to it: Only each cluster's J2000 right ascension and declination, from Part I; the app is free, and refers to this website.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `harris_2010`
+
+## Hipparcos, the New Reduction of the Raw Data (van Leeuwen, 2007): the astrometric catalogue, hip2.dat
+
+- Publisher: F. van Leeuwen (Institute of Astronomy, Cambridge), from ESA's Hipparcos mission; distributed by the CDS, Strasbourg, as VizieR catalogue I/311 (its mirror at the CfA)
+- Licence: CC BY-NC 3.0 IGO
+- Terms: https://www.cosmos.esa.int/web/esdc/terms-and-conditions
+- Credit: Credit: ESA. Hipparcos, the new reduction: F. van Leeuwen (2007), A&A 474, 653; CDS/VizieR, catalogue I/311 (doi:10.26093/cds/vizier)
+- Page: https://www.cosmos.esa.int/web/hipparcos/hipparcos-2
+- What was done to it: Only each star's parallax and its formal error are read, for the stars HYG places by that parallax: the error over the parallax is kept, rounded up to half a percent, as how well the star's distance is known
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `hipparcos_new_reduction`
+
+## Horizons System: Ariel about Uranus, 1900 to 2100 (URA184)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Ariel, URA184), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Uranus is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); its radius and geometric albedo, which the scene draws it by, and the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_ariel`
+
+## Horizons System: 1 Ceres about the Sun, 1900 to 2100 (JPL#48)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (1 Ceres, JPL#48), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about the Sun is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_ceres`
+
+## Horizons System: Charon about Pluto, 1900 to 2100 (PLU060)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Charon, PLU060), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Pluto is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_charon`
+
+## Horizons System: Deimos about Mars, 1900 to 2100 (MAR099)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Deimos, MAR099), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Mars is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); its radius and geometric albedo, which the scene draws it by, and the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_deimos`
+
+## Horizons System: Dione about Saturn, 1900 to 2100 (SAT441)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Dione, SAT441), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Saturn is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); its radius and geometric albedo, which the scene draws it by, and the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_dione`
+
+## Horizons System: Enceladus about Saturn, 1900 to 2100 (SAT441)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Enceladus, SAT441), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Saturn is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_enceladus`
+
+## Horizons System: Iapetus about Saturn, 1900 to 2100 (SAT441)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Iapetus, SAT441), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Saturn is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); its radius and geometric albedo, which the scene draws it by, and the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_iapetus`
+
+## Horizons System: Miranda about Uranus, 1900 to 2100 (URA184)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Miranda, URA184), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Uranus is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); its radius and geometric albedo, which the scene draws it by, and the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_miranda`
+
+## Horizons System: Oberon about Uranus, 1900 to 2100 (URA184)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Oberon, URA184), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Uranus is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); its radius and geometric albedo, which the scene draws it by, and the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_oberon`
+
+## Horizons System: Phobos about Mars, 1900 to 2100 (MAR099)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Phobos, MAR099), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Mars is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); its radius and geometric albedo, which the scene draws it by, and the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_phobos`
+
+## Horizons System: Rhea about Saturn, 1900 to 2100 (SAT441)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Rhea, SAT441), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Saturn is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); its radius and geometric albedo, which the scene draws it by, and the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_rhea`
+
+## Horizons System: Tethys about Saturn, 1900 to 2100 (SAT441)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Tethys, SAT441), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Saturn is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); its radius and geometric albedo, which the scene draws it by, and the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_tethys`
+
+## Horizons System: Titan about Saturn, 1900 to 2100 (SAT441)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Titan, SAT441), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Saturn is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_titan`
+
+## Horizons System: Titania about Uranus, 1900 to 2100 (URA184)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Titania, URA184), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Uranus is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); its radius and geometric albedo, which the scene draws it by, and the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_titania`
+
+## Horizons System: Triton about Neptune, 1900 to 2100 (NEP098)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Triton, NEP098), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Neptune is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_triton`
+
+## Horizons System: Umbriel about Uranus, 1900 to 2100 (URA184)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (Umbriel, URA184), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about Uranus is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); its radius and geometric albedo, which the scene draws it by, and the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_umbriel`
+
+## Horizons System: 4 Vesta about the Sun, 1900 to 2100 (JPL#36)
+
+- Publisher: NASA/JPL Solar System Dynamics group
+- Licence: Public domain
+- Terms: https://ssd.jpl.nasa.gov/faq.html
+- Credit: NASA/JPL Solar System Dynamics, Horizons System (4 Vesta, JPL#36), data retrieved 2026-11-16
+- Page: https://ssd.jpl.nasa.gov/horizons/
+- What was done to it: Its position about the Sun is taken every 37.06 days from 1900 to 2100, and build_orbits.py fits to it, by least squares, an ellipse whose node and periapsis turn at steady rates in a plane of its own, its mean longitude running at a steady rate (with a steady change of that rate where it helps); the scene places the body on that ellipse, which is as far from Horizons' place as build_orbits.py measures and the app says.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `horizons_orbit_vesta`
 
 ## hyg
 
@@ -1388,6 +1608,17 @@ Every file here keeps the licence of the sources it was made from. Each source, 
 - What was done to it: Not a picture: the rings' optical depth from 41,000 to 52,000 km, worked into a radial strip of 512 texels (build_rings.py). Each ring is drawn as a circle at its middle radius, as wide as the middle of the widths given (the rings are ellipses and vary in width round them: the epsilon ring's distance from Uranus changes by 800 km). A depth given as a range takes the geometric mean of its ends; one given as at most or at least a value takes that value. The two faint outer rings, ten thousand times less opaque, are left out.
 - Retrieved: 2026-11-15
 - Identifier in the app's lock: `uranus_rings_pds`
+
+## Catalogue of stars in Milky Way globular clusters from Gaia EDR3, version 2
+
+- Publisher: E. Vasiliev and H. Baumgardt; Zenodo
+- Licence: CC BY 4.0
+- Terms: https://zenodo.org/records/4891252
+- Credit: Vasiliev, E. and Baumgardt, H. (2021), Gaia EDR3 view on Galactic globular clusters, MNRAS 505, 5978; catalogue doi:10.5281/zenodo.4891252
+- Page: https://zenodo.org/records/4891252
+- What was done to it: Only the centres of the clusters Harris (2010) does not list, worked out from their member stars' positions and offsets from the centre; no star is copied.
+- Retrieved: 2026-11-16
+- Identifier in the app's lock: `vasiliev_baumgardt_2021_gaia`
 
 ## Venus Magellan Global Topography 4641m, version 2
 
