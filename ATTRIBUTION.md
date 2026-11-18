@@ -762,6 +762,17 @@ Every file here keeps the licence of the sources it was made from. Each source, 
 - Retrieved: 2026-11-15
 - Identifier in the app's lock: `moon_sldem2015_128`
 
+## The orbits of distant objects (Centaurs, trans-Neptunian and scattered-disc objects) of the MPC Orbit (MPCORB) Database
+
+- Publisher: International Astronomical Union's Minor Planet Center
+- Licence: Free to redistribute, the source clearly specified
+- Terms: https://tamkin3.eps.harvard.edu/WWWPolicy.html
+- Credit: Orbits from the International Astronomical Union's Minor Planet Center (MPCORB, Distant.txt)
+- Page: https://minorplanetcenter.net/iau/MPCORB.html
+- What was done to it: Only the objects whose orbits lie beyond Neptune's (a semimajor axis over 30.07 au), each one's name, epoch (unpacked to a Julian date), mean anomaly, argument of perihelion, node, inclination, eccentricity, semimajor axis and absolute magnitude as the MPC writes them; the app places each on its orbit at its clock's time.
+- Retrieved: 2026-11-17
+- Identifier in the app's lock: `mpc_distant_objects`
+
 ## pck00011.tpc: the IAU's rotation and shape of the Sun, the planets, their moons and some asteroids
 
 - Publisher: NASA's Navigation and Ancillary Information Facility (NAIF), JPL
@@ -1740,6 +1751,17 @@ Every file here keeps the licence of the sources it was made from. Each source, 
 - What was done to it: Not copied: the names, part numbers, GPUs and years of the chips listed, read from the page at this revision and written into the app's table of devices (bodies/quality.json), each chip given the 3D view's tier for its GPU's generation.
 - Retrieved: 2026-11-15
 - Identifier in the app's lock: `wikipedia_unisoc`
+
+## The WISE Catalog of Galactic H II Regions, version 2.2 (IRSA's table wisegalhii)
+
+- Publisher: L. D. Anderson et al.; NASA/IPAC Infrared Science Archive
+- Licence: Public, with no usage restrictions
+- Terms: https://irsa.ipac.caltech.edu/data_use_terms.html
+- Credit: Anderson, L. D. et al. (2014), The WISE Catalog of Galactic H II Regions, ApJS 212, 1; dataset doi:10.26131/IRSA146, NASA/IPAC Infrared Science Archive
+- Page: https://irsa.ipac.caltech.edu/data/WISE/GalHII/overview.html
+- What was done to it: Only the regions it gives a distance, each one's name, Galactic longitude and latitude, radius, distance, the distance's uncertainty and method, and class, as the catalogue writes them; nothing else of the catalogue is copied.
+- Retrieved: 2026-11-17
+- Identifier in the app's lock: `wise_hii_regions_v22`
 
 ## The openings of Wikipedia's articles (articles-v1)
 
